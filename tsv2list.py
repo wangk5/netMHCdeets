@@ -17,8 +17,5 @@ for x in range (0, len(allele_doc[1])):
 with open("list_all", "w") as txt_file:
 		y = len(alleles) - 1
 		while y >= 0:
-			if y - 1 >= 0:
-				txt_file.write("HLA-" + alleles[y] + ",")
-			else:
-				txt_file.write("HLA-" + alleles[y])
+			txt_file.write("HLA-" + alleles[y] + "\n")
 			y = y - 1
