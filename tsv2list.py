@@ -14,7 +14,7 @@ for x in range (0, len(allele_doc[1])):
 		if allele_doc[1][x][1] == "*":
 			alleles.append(allele_doc[1][x])
 
-with open("list_all", "w") as txt_file:
+with open("allelelist", "w") as txt_file:
 		y = len(alleles) - 1
 		while y >= 0:
 			txt_file.write("HLA-" + alleles[y] + "\n")
