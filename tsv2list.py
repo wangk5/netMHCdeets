@@ -24,7 +24,9 @@ allelelist = ""
 y = len(alleles) - 1
 while y >= 0:
 	if y - 1 >= 0:
-		allelelist = allelelist + "HLA-" + alleles[y] + ","
+		allelelist = allelelist + "HLA-" + alleles[y][0] + 
+		             alleles[y][2:4] + alleles[y][5:7] + ","
 	else:
-		allelelist = allelelist + "HLA-" + alleles[y]
+		allelelist = allelelist + "HLA-" + alleles[y][0] + 
+		             alleles[y][2:4] + alleles[y][5:7]
 	y = y - 1
