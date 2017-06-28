@@ -31,4 +31,4 @@ while y >= 0:
 		             alleles[y][2:4] + alleles[y][5:7]
 	y = y - 1
 
-return allelelist
+print allelelist
